@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #000000, #330000, #660000);
+    background-size: 400% 400%;
+    animation: fundoAnimado 10s ease infinite;
+    color: rgb(255, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+
+@keyframes fundoAnimado {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.div-2 {
+    background: url("daniel.jpg") no-repeat center/cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    border: 4px solid #ff0000;
+    animation: fotoPulse 3s infinite alternate ease-in-out;
+}
+
+@keyframes fotoPulse {
+    0% { transform: scale(1); box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); }
+    100% { transform: scale(1.05); box-shadow: 0 0 40px rgba(255, 0, 0, 0.8); }
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.daniel {
+    font-size: 43px;
+    box-shadow: red -5px -5px 5px;
+}
+
+.onze {
+    color: rgb(55, 222, 13);
+    box-shadow: red 5px 5px 5px;
+}
+
+.desenvolvedor {
+    font-size: 20px;
+    color: brown;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: chartreuse;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+ul li::before {
+    content: "✔";
+    color: chartreuse;
+    font-weight: bold;
+}
+
+ul li:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 0, 0, 0.4);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
