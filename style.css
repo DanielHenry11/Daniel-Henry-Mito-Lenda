@@ -100,3 +100,90 @@ ul li:hover {
     background-color: rgba(255, 0, 0, 0.4);
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
 }
+
+/* MEDIA QUERIES - RESPONSIVIDADE */
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 40px;
+        left: 10px;
+        top: 10px;
+    }
+
+    .daniel {
+        font-size: 35px;
+    }
+
+    .desenvolvedor {
+        font-size: 18px;
+    }
+
+    .div-2 {
+        width: 250px;
+        height: 250px;
+    }
+
+    ul li {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+        left: 10px;
+        top: 10px;
+    }
+
+    .daniel {
+        font-size: 30px;
+    }
+
+    .desenvolvedor {
+        font-size: 16px;
+    }
+
+    .div-2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    ul li {
+        font-size: 15px;
+        padding: 8px 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        position: static;
+        margin: 20px auto;
+        font-size: 26px;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .daniel {
+        font-size: 24px;
+        margin-right: 35px;
+    }
+
+    .desenvolvedor {
+        font-size: 14px;
+    }
+
+    .div-2 {
+        width: 150px;
+        height: 150px;
+    }
+
+    ul li {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    main {
+        gap: 20px;
+    }
+}
